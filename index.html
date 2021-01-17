@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/scss.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/header-date.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/slide-bar.js"></script>
+    <title>Nixon Watches</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-time" id="timedisplay">
+            <div>
+                <input type=button value="Show Time" onclick="alert(new Date())">
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="header-search">
+                <div class="search-img">
+                    <img src="img/search.png" id="search-img" alt="">
+                </div>
+                <div class="search-input">
+                    <input type="search" name="" id="search-input" placeholder="What can we help you find?">
+                </div>
+            </div>
+            <div class="mob-menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="header-logo">
+                <img src="img/logo.png" id="logo-img" alt="">
+            </div>
+            <div class="header-items">
+                <div class="language">
+                    <a href="" id="en">
+                        <img src="img/flag.png" id="flag-img" alt="">
+                        <span>EN</span>
+                    </a>
+                </div>
+                <div class="find-store">
+                    <a href="">Find a Store</a>
+                </div>
+                <div class="sign-in">
+                    <a href="" class="change-arrow" id="item-0">
+                        <span>Sign in</span>
+                        <div class="arrow"></div>
+                    </a>
+                    <div class="div-for-signup drop-div uniq-0 item-0" id="item-0">
+                        <div class="text">
+                            <span>Log in to faster checkout</span>
+                        </div>
+                        <div class="btn-login">
+                            <span id="log-in">Log in</span>
+                        </div>
+                        <div class="register">
+                            <span>Don`t have account?</span>
+                            <span>Sign up</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart">
+                    <a href="">
+                        <img src="img/shopping-cart.png" id="shopping-cart-img" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="mob-shopping-cart">
+                <a href="">
+                    <img src="img/shopping-cart.png" id="mob-shopping-cart-img" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="mob-header-search">
+            <div class="mob-search-img">
+                <img src="img/search.png" id="mob-search-img" alt="">
+            </div>
+            <div class="mob-search-input">
+                <input type="search" name="" id="search-mob-input" placeholder="What can we help you find?">
+            </div>
+        </div>
+
+        <div class="display-none mob-nav">
+            <div class="mob-nav-container">
+                <div class="mob-nav-1">
+                    <ol>
+                        <li>
+                            <span>
+                                <span>Sale</span>
+                            </span>
+
+                        </li>
+                        <li class="mob-nav-1-li-1">
+                            <span>
+                                <span>Men`s Watches</span>
+                                <img src="img/arrow-right-white.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <li class="mob-nav-1-li-2">
+                            <span>
+                                <span> Men`s WatchesWomen`s Watches</span>
+                                <img src="img/arrow-right-white.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <li class="mob-nav-1-li-3">
+                            <span>
+                                <span>Bags</span>
+                                <img src="img/arrow-right-white.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <li class="mob-nav-1-li-4">
+                            <span>
+                                <span>Clothing & Accessories</span>
+                                <img src="img/arrow-right-white.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="mob-nav-2">
+                    <div class="language">
+                            <img src="img/flag.png" id="mob-flag-img" alt="">
+                            <span>EN</span>
+                    </div>
+                    <div class="mob-nav-find-store">
+                        <span>Find a store</span>
+                    </div>
+                    <div class="mob-nav-sign-in">
+                        <span>Sign in</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mob-nav-container-hide mob-nav-hide-1 ">
+                <div class="mob-nav-1">
+                    <ol>
+                        <li>
+                            <span class="back-1">
+                                <img src="img/arrow-left-white.png" class="mob-nav-back-img" alt="">
+                                <span>Back</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span>
+                                <span>All Men`s Watches</span>
+                            </span>
+                        </li>
+                        <li class="drop-menu d-m-1">
+                            <span>
+                                <span>Featured</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+
+                        <li class="drop-menu d-m-2">
+                            <span>
+                                <span>Styles</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-3">
+                            <span>
+                                <span>Use</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-4">
+                            <span>
+                                <span>Trending</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+            <div class="mob-nav-container-hide mob-nav-hide-2">
+                <div class="mob-nav-1">
+                    <ol>
+                        <li>
+                            <span class="back-2">
+                                <img src="img/arrow-left-white.png" class="mob-nav-back-img" alt="">
+                                <span>Back</span>
+                            </span>
+
+                        </li>
+                        <li class="drop-menu d-m-5">
+                            <span>
+                                <span>All Woman Watches</span>
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-6">
+                            <span>
+                                <span>Featured</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-7">
+                            <span>
+                                <span>Styles</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-8">
+                            <span>
+                                <span>Use</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-9">
+                            <span>
+                                <span>Trending</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mob-nav-container-hide mob-nav-hide-3">
+                <div class="mob-nav-1">
+                    <ol>
+                        <li>
+                            <span class="back-3">
+                                <img src="img/arrow-left-white.png" class="mob-nav-back-img" alt="">
+                                <span>Back</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span>
+                                <span>All Bags</span>
+                            </span>
+                        </li>
+                        <li class="drop-menu d-m-10">
+                            <span>
+                                <span>Featured</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-11">
+                            <span>
+                                <span>Styles</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-12">
+                            <span>
+                                <span>Trending</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+            <div class="mob-nav-container-hide mob-nav-hide-4">
+                <div class="mob-nav-1">
+                    <ol>
+                        <li>
+                            <span class="back-4">
+                                <img src="img/arrow-left-white.png" class="mob-nav-back-img" alt="">
+                                <span>Back</span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span>
+                                <span>All Clothes and Accessories</span>
+                            </span>
+                        </li>
+                        <li class="drop-menu d-m-13">
+                            <span>
+                                <span>Featured</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-14">
+                            <span>
+                                <span>Styles</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                        <li class="drop-menu d-m-15">
+                            <span>
+                                <span>Trending</span>
+                                <img src="img/plus.png" class="mob-nav-img" alt="">
+                            </span>
+                        </li>
+                        <div class="mob-nav-drop-menu display-none">
+                            <ol>
+                                <li>item-1</li>
+                                <li>item-2</li>
+                                <li>item-3</li>
+                                <li>item-4</li>
+                            </ol>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="nav-show">
+        <div class="change-arrow" id='item-1'>
+            <span>Men`s Watches</span>
+            <div class="arrow"></div>
+            <span class="black-line"></span>
+        </div>
+        <div class="change-arrow" id="item-2">
+            <span>Women`s Watches</span>
+            <div class="arrow"></div>
+            <span class="black-line"></span>
+        </div>
+        <div class="change-arrow" id="item-3">
+            <span>Bags</span>
+            <div class="arrow"></div>
+            <span class="black-line"></span>
+        </div>
+        <div class="change-arrow" id="item-4">
+            <span>Clothing & Accessories</span>
+            <div class="arrow"></div>
+            <span class="black-line"></span>
+        </div>
+
+        <div class="nav-hide">
+            <div class="drop-container">
+                <div class="drop-nav drop-div uniq-1 item-1" id='item-1'>
+                    <ol class="drop-aside">
+                        <li>Collections</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Custom</li>
+                        <li>Shop all <span id="btn-arrow">→</span></li>
+                    </ol>
+                    <ol class="drop-center">
+                        <ol>
+                            <li>Styles</li>
+                            <li>Classic</li>
+                            <li>Digital</li>
+                            <li>Chronograph</li>
+                            <li>Oversized</li>
+                        </ol>
+                        <ol>
+                            <li>Use</li>
+                            <li>Surf & Tide</li>
+                            <li>Sport & Fitness</li>
+                            <li>Waterproof</li>
+                        </ol>
+                        <ol>
+                            <li>Trending</li>
+                            <li>Black Watches</li>
+                            <li>Gold Watches</li>
+                            <li>Stainless Steal</li>
+                            <li>Leather</li>
+                        </ol>
+                        <ol>
+                            <li>Collaborations</li>
+                            <li>Star Wars</li>
+                            <li>Metallica</li>
+                        </ol>
+                    </ol>
+                </div>
+                <div class="drop-nav drop-div uniq-2 item-2" id='item-2'>
+                    <ol class="drop-aside">
+                        <li>Collections</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Custom</li>
+                        <li>Shop all <span id="btn-arrow">→</span></li>
+                    </ol>
+                    <ol class="drop-center">
+                        <ol>
+                            <li>Styles</li>
+                            <li>Classic</li>
+                            <li>Digital</li>
+                        </ol>
+                        <ol>
+                            <li>Use</li>
+                            <li>Surf & Tide</li>
+                            <li>Sport & Fitness</li>
+                            <li>Waterproof</li>
+                        </ol>
+                        <ol>
+                            <li>Trending</li>
+                            <li>Black Watches</li>
+                        </ol>
+                        <ol>
+                            <li>Collaborations</li>
+                            <li>Star Wars</li>
+                            <li>Metallica</li>
+                        </ol>
+                    </ol>
+                </div>
+                <div class="drop-nav drop-div uniq-3 item-3" id='item-3'>
+                    <ol class="drop-aside">
+                        <li>Collections</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Custom</li>
+                        <li>Shop all <span id="btn-arrow">→</span></li>
+                    </ol>
+                    <ol class="drop-center">
+                        <ol>
+                            <li>Styles</li>
+                            <li>Classic</li>
+                            <li>Digital</li>
+                        </ol>
+                        <ol>
+                            <li>Use</li>
+                            <li>Surf & Tide</li>
+                            <li>Sport & Fitness</li>
+                            <li>Waterproof</li>
+                        </ol>
+                        <ol>
+                            <li>Trending</li>
+                            <li>Black Watches</li>
+                        </ol>
+                    </ol>
+                </div>
+                <div class="drop-nav drop-div uniq-4 item-4" id='item-4'>
+                    <ol class="drop-aside">
+                        <li>Collections</li>
+                        <li>New Arrivals</li>
+                        <li>Best Sellers</li>
+                        <li>Custom</li>
+                        <li>Shop all <span id="btn-arrow">→</span></li>
+                    </ol>
+                    <ol class="drop-center">
+                        <ol>
+                            <li>Styles</li>
+                            <li>Classic</li>
+                            <li>Digital</li>
+                            <li>Chronograph</li>
+                            <li>Oversized</li>
+                        </ol>
+                        <ol>
+                            <li>Use</li>
+                            <li>Surf & Tide</li>
+                            <li>Sport & Fitness</li>
+                            <li>Waterproof</li>
+                        </ol>
+                        <ol>
+                            <li>Collaborations</li>
+                            <li>Star Wars</li>
+                            <li>Metallica</li>
+                        </ol>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+        <article class="article-1">
+            <div class="article-1-container">
+                <div class="article-1-title">The Regulus</div>
+                <div class="article-1-text-1">A high performance watch made to withstand</div>
+                <div class="article-1-text-2">extreme conditions.</div>
+                <div class="article-1-btn">Shop Now</div>
+            </div>
+        </article>
+        <article class="article-2">
+            <div class="article-2-item-1 article-2-item">
+                <div class="article-2-title">
+                    <span>Watches</span>
+                </div>
+                <div class="article-2-text">
+                    <span class="article-2-double-text">
+                        <p>Shop Men</p>
+                        <p>Shop Women</p>
+                    </span>
+                </div>
+            </div>
+            <div class="article-2-item-2 article-2-item">
+                <div class="article-2-title">
+                    <span>Bags & Backpacks</span>
+                </div>
+                <div class="article-2-text">
+                    <p>Shop Now</p>
+                </div>
+            </div>
+            <div class="article-2-item-3 article-2-item">
+                <div class="article-2-title">
+                    <span>Clothing & Accessories</span>
+                </div>
+                <div class="article-2-text">
+                    <p>Shop Now</p>
+                </div>
+            </div>
+            </div>
+        </article>
+        <article class="article-3">
+            <div class="article-3-aside">
+                <span>You Might Like</span>
+                <span>Shop all→</span>
+            </div>
+            <div class="gallery-container">
+                <div class="left-arrow article-3-arrow">
+                    <img src="../img/arrow-left.png" id="arrow-img-left" alt="">
+                </div>
+                <div class="gallery">
+                    <div class="photo-1 photo"></div>
+                    <div class="photo-2 photo"></div>
+                    <div class="photo-3 photo"></div>
+                    <div class="photo-4 photo"></div>
+                    <div class="photo-5 photo"></div>
+                </div>
+                <div class="right-arrow article-3-arrow">
+                    <img src="../img/arrow-right.png" id="arrow-img-right" alt="">
+                </div>
+            </div>
+        </article>
+        <article class="article-4">
+            <div class="article-4-item-1">
+                <div class="article-4-title">
+                    <span>The Custom Shop</span>
+                </div>
+                <div class="article-4-text">
+                    <p>Get started</p>
+                </div>
+            </div>
+            <div class="article-4-item-2">
+                <div class="article-4-title">
+                    <span>On Sale Now</span>
+                </div>
+                <div class="article-4-text">
+                    <p>Shop Now</p>
+                </div>
+            </div>
+        </article>
+        <article class="article-5">
+            <div class="article-5-container">
+                <div class="article-5-title">
+                    <span>#NIXON</span>
+                </div>
+                <div class="article-5-text">
+                    <p>Get featured by showing us how you #nixon on Instagram</p>
+                </div>
+                <div class="article-5-btn">
+                    Shop Instagram
+                </div>
+            </div>
+        </article>
+        <article class="article-6">
+            <div class="article-6-slide">
+                <div class="article-6-slide-1-item-1 a-6-one art-6-photo"></div>
+                <div class="article-6-slide-1-item-2 a-6-two">
+                    <div class="article-6-slide-1-inner-item-1 art-6-photo"></div>
+                    <div class="article-6-slide-1-inner-item-2 art-6-photo"></div>
+                </div>
+                <div class="article-6-slide-1-item-3 a-6-one art-6-photo"></div>
+                <div class="article-6-slide-1-item-4 a-6-two">
+                    <div class="article-6-slide-1-inner-item-3 art-6-photo"></div>
+                    <div class="article-6-slide-1-inner-item-4 art-6-photo"></div>
+                </div>
+                <div class="article-6-slide-1-item-5 a-6-one art-6-photo"></div>
+                <div class="article-6-arrow-1"></div>
+            </div>
+            <div class="article-6-slide">
+                <div class="article-6-slide-2-item-1 a-6-one art-6-photo"></div>
+                <div class="article-6-slide-2-item-2 a-6-two">
+                    <div class="article-6-slide-2-inner-item-1 art-6-photo"></div>
+                    <div class="article-6-slide-2-inner-item-2 art-6-photo"></div>
+                </div>
+                <div class="article-6-slide-2-item-3 a-6-two">
+                    <div class="article-6-slide-2-inner-item-3 art-6-photo"></div>
+                    <div class="article-6-slide-2-inner-item-4 art-6-photo"></div>
+                </div>
+                <div class="article-6-slide-2-item-4 a-6-one art-6-photo"></div>
+                <div class="article-6-slide-2-item-5 a-6-one art-6-photo"></div>
+                <div class="article-6-arrow-2"></div>
+            </div>
+        </article>
+        <article>
+            <div class="article-6-show-photo">
+                <div class="article-6-left-arrow"></div>
+                <div class="article-6-photo-container">
+                    <div class="article-6-photo"></div>
+                    <div class="article-6-exit"></div>
+                </div>
+                <div class="article-6-right-arrow"></div>
+
+            </div>
+        </article>
+        <article class="article-7">
+            <div class="article-7-text">
+                <p>Nixon is the go-to accessories shop for premium watches and much more. With a wide range of quality
+                    watches, apparel, backpacks, and accessories, Nixon stays true to its surf, skate and snow roots.
+                    From everyday sports & fitness watches
+                    for an active lifestyle to small digital watches for a night out, there's something for everyone.
+                    Whether you need an everyday watch or are looking for your next skateboard watch, Nixon has you
+                    covered. Still can't find the perfect option,
+                    Customize Your Watch for a truly unique look.</p>
+            </div>
+        </article>
+    </main>
+
+
+    <footer>
+        <div class="footer-email">
+            <div class="half-of-div">
+                <span>Become a Nixon insider</span>
+                <span>& get 10% off</span>
+            </div>
+            <div class="half-of-div-2">
+                <div class="footer-sign-in-btn">
+                    <span>Sign in</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-networks">
+                <img src="img/instagram-icon.png" alt="" srcset="">
+                <img src="img/pinterest-icon.png" alt="" srcset="">
+                <img src="img/facebook-icon.png" alt="" srcset="">
+                <img src="img/youtube-icon.png" alt="" srcset="">
+                <img src="img/twitter-icon.png" alt="" srcset="">
+            </div>
+            <div class="line"></div>
+            <div class="footer-text">
+                <a href=""><span>Privacy Policy</span> </a> |
+                <a href=""><span>Terms and Conditions</span></a> |
+                <a href=""><span>Social Responsibility</span></a> |
+                <a href=""><span>Accessibility</span></a> |
+                <a href=""><span>CA Residents Only: Do Not Sell My Personal Information</span></a> |
+                <a href=""><span>Patents</span></a> |
+                <a href=""><span>© 2020 Nixon Inc.</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+    </style>
+</body>
+
+</html>

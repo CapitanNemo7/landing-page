@@ -1,0 +1,322 @@
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+// article-6
+.article-6-show-photo {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(131, 128, 128, 0.863);
+
+    .article-6-left-arrow {
+        background-image: url(../img/left-arrow.png);
+        background-size: 100% 50%;
+        height: 100px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        border-radius: 4px;
+    }
+
+    .article-6-left-arrow:hover {
+        cursor: pointer;
+    }
+
+    .article-6-photo-container {
+        display: flex;
+        height: 600px;
+        flex-basis: 600px;
+        background-color: white;
+        padding: 20px;
+        opacity: 10;
+        position: relative;
+        border-radius: 0px 10px 0px 0px;
+
+        .article-6-photo {
+            height: 100%;
+            flex-grow: 1;
+            background-image: url(../img/article-610.jpg);
+            background-size: 100% 100%;
+        }
+
+        .article-6-exit {
+            right: 0px;
+            top: 0px;
+            height: 40px;
+            width: 40px;
+            border-radius: 4px;
+            position: absolute;
+            background-image: url(../img/exit.png);
+            background-size: 100% 100%;
+        }
+
+        .article-6-exit:hover {
+            cursor: pointer;
+        }
+    }
+
+    .article-6-right-arrow {
+        background-image: url(../img/right-arrow.png);
+        background-size: 100% 50%;
+        height: 100px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        border-radius: 4px;
+    }
+
+    .article-6-right-arrow:hover {
+        cursor: pointer;
+    }
+
+    .article-6-photo {
+        background-image: url(../img/);
+    }
+}
+
+//article-6 end
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+    //header
+
+    header {
+
+        .mob-nav {
+            height: 140%;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.404);
+
+            .mob-nav-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                background-color: white;
+
+                .mob-nav-1 {
+                    ol li:first-child {
+                        color: red;
+                    }
+
+                    ol {
+                        margin: 0px;
+                        padding: 0px;
+
+                        li {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            span {
+                                display: flex;
+                                margin: 9px;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                span {
+                                    font-size: 18px;
+                                }
+
+                                img {
+                                    width: 1.5%;
+                                    height: 25%;
+                                }
+                            }
+                        }
+
+                        li:hover {
+                            cursor: pointer;
+                        }
+
+                        li::after {
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            background-color: rgba(128, 128, 128, 0.281);
+                            clear: both;
+                        }
+                    }
+                }
+
+                .mob-nav-2 {
+                    margin: 50px 0px 0px 0px;
+
+                    #mob-flag-img {
+                        height: 24px;
+                        width: 22px;
+                        margin: 3px 3px 0px;
+                    }
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+                        margin: 14px;
+                        cursor: pointer;
+
+                        >span {
+                            color: rgba(128, 128, 128, 0.726);
+                        }
+                    }
+
+                }
+            }
+
+            .mob-nav-container-hide {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                background-color: white;
+
+                .mob-nav-1 {
+
+
+                    ol li:first-child span {
+                        justify-content: flex-start;
+                    }
+
+                    ol {
+                        margin: 0px;
+                        padding: 0px;
+
+                        li {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            span {
+                                display: flex;
+                                margin: 9px;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .mob-nav-back-img {
+                                    width: 1.5%;
+                                    height: 30%;
+                                }
+
+                                span {
+                                    font-size: 18px;
+                                }
+
+                                img {
+                                    width: 3%;
+                                    height: 30%;
+                                }
+                            }
+                        }
+
+                        li:hover {
+                            cursor: pointer;
+                        }
+
+
+
+                        li::after {
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            background-color: rgba(128, 128, 128, 0.281);
+                        }
+
+                        li::before {
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            background-color: rgba(128, 128, 128, 0.281);
+                        }
+
+                        .mob-nav-drop-menu {
+                            ol {
+                                li {
+                                    margin: 20px 20px 20px 30px;
+                                }
+
+                                li::after {
+                                    content: "";
+                                    background-color: rgb(255, 255, 255);
+                                }
+
+                                li::before {
+                                    content: "";
+                                    background-color: rgb(255, 255, 255);
+                                }
+
+                                li:first-child {
+                                    color: black;
+                                    background-color: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+
+            .mob-nav-hide-1 {
+                display: none;
+            }
+
+            .mob-nav-hide-2 {
+                display: none;
+            }
+
+            .mob-nav-hide-3 {
+                display: none;
+            }
+
+            .mob-nav-hide-4 {
+                display: none;
+            }
+        }
+    }
+
+    //header end
+}
+
+@media screen and (max-width: 520px) {
+    header .mob-nav .mob-nav-container {
+        width: 100%;
+    }
+
+    header .mob-nav {
+        background-color: white;
+    }
+    
+    header .mob-nav .mob-nav-container-hide {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .article-6-show-photo .article-6-photo-container {
+        height: 300px;
+        flex-basis: 300px;
+    }
+
+}
